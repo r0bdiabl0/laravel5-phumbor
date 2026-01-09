@@ -1,6 +1,6 @@
-# DEPRECATED - Use r0bdiablo/php-thumbor instead
+# DEPRECATED - Use r0bdiabl0/php-thumbor instead
 
-> **This package has been replaced by [`r0bdiablo/php-thumbor`](https://github.com/r0bdiabl0/php-thumbor).**
+> **This package has been replaced by [`r0bdiabl0/php-thumbor`](https://github.com/r0bdiabl0/php-thumbor).**
 >
 > The new package offers:
 > - Zero dependencies (no longer requires 99designs/phumbor)
@@ -13,10 +13,10 @@
 
 ```bash
 # Remove old package
-composer remove r0bdiablo/laravel5-phumbor
+composer remove r0bdiabl0/laravel5-phumbor
 
 # Install new package
-composer require r0bdiablo/php-thumbor
+composer require r0bdiabl0/php-thumbor
 ```
 
 ### Update your code:
@@ -59,7 +59,7 @@ Requires PHP 7.1+.
 
 Simply run this command in your project root:
 
-    composer require r0bdiablo/laravel5-phumbor
+    composer require r0bdiabl0/laravel5-phumbor
 
 or require the package in your `composer.json` file:
 
