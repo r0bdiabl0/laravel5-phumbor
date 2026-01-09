@@ -1,4 +1,53 @@
-# Phumbor for Laravel
+# DEPRECATED - Use r0bdiablo/php-thumbor instead
+
+> **This package has been replaced by [`r0bdiablo/php-thumbor`](https://github.com/r0bdiabl0/php-thumbor).**
+>
+> The new package offers:
+> - Zero dependencies (no longer requires 99designs/phumbor)
+> - Works standalone OR with Laravel (Laravel is optional)
+> - Modern PHP 8.2+ with strict types
+> - Full Thumbor 7.7.7 support (AVIF, WebP, HEIC formats)
+> - Laravel 10, 11, 12, and 13 support
+
+## Migration
+
+```bash
+# Remove old package
+composer remove r0bdiablo/laravel5-phumbor
+
+# Install new package
+composer require r0bdiablo/php-thumbor
+```
+
+### Update your code:
+
+```php
+// Old
+use R0bdiabl0\Laravel5Phumbor\Facades\Phumbor;
+
+// New
+use R0bdiabl0\Thumbor\Laravel\Facades\Thumbor;
+```
+
+### Update config:
+
+- Old config file: `config/laravel5-phumbor.php`
+- New config file: `config/thumbor.php`
+
+Run `php artisan vendor:publish --tag=thumbor-config` after installing.
+
+### Update .env:
+
+```env
+THUMBOR_SERVER=https://your-thumbor-server.com
+THUMBOR_KEY=your-secret-key
+```
+
+The API methods (`url()`, `fitIn()`, `addFilter()`, etc.) remain the same.
+
+---
+
+# Original README (Legacy)
 
 This Laravel package adds support for [the 99designs PHP interface](https://github.com/99designs/phumbor) to the [globocom Thumbor thumbnail service](https://github.com/globocom/thumbor).
 
