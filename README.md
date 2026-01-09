@@ -13,7 +13,7 @@
 
 ```bash
 # Remove old package
-composer remove r0bdiabl0/laravel5-phumbor
+composer remove r0bdiablo/laravel5-phumbor
 
 # Install new package
 composer require r0bdiabl0/php-thumbor
@@ -59,11 +59,11 @@ Requires PHP 7.1+.
 
 Simply run this command in your project root:
 
-    composer require r0bdiabl0/laravel5-phumbor
+    composer require r0bdiablo/laravel5-phumbor
 
 or require the package in your `composer.json` file:
 
-    "r0bdiabl0/laravel5-phumbor": "^1.0"
+    "r0bdiablo/laravel5-phumbor": "^1.0"
 
 Run `composer install` to download the package and have the autoloader updated.
 
@@ -101,4 +101,4 @@ For example:
 
 ## License
 
-Licensed under the MIT license. See <https://github.com/r0bdiabl0/laravel5-phumbor/blob/master/LICENSE>
+Licensed under the MIT license. See <https://github.com/r0bdiablo/laravel5-phumbor/blob/master/LICENSE>
